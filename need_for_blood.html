@@ -10,7 +10,7 @@
 </head>
 
 <body style="min-height: 100%; display: flex; flex-direction: column;">
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-danger" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" style="font-size: 23px;">RedHope</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,7 +45,7 @@
             </div>
         </div>
     </nav>
-    <form class="row g-3" style="display: flex; padding: 3rem;">
+    <form class="row g-3" style="display: flex; padding: 3rem; margin-top: 4rem;">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
