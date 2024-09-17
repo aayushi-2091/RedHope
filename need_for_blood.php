@@ -12,7 +12,7 @@
 <body style="min-height: 100%; display: flex; flex-direction: column;">
     <nav class="navbar navbar-expand-lg bg-danger" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="font-size: 23px;">RedHope</a>
+            <a class="navbar-brand" href="index.php" style="font-size: 23px;">RedHope</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,13 +24,13 @@
                         <a class="nav-link active" aria-current="page" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="why_donate_blood.html">Why donate blood</a>
+                        <a class="nav-link active" aria-current="page" href="why_donate_blood.php">Why donate blood</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Become a donor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="need_for_blood.html">Need Blood</a>
+                        <a class="nav-link active" aria-current="page" href="need_for_blood.php">Need Blood</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Contact</a>
