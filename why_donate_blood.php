@@ -10,41 +10,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-danger" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php" style="font-size: 23px;">RedHope</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="why_donate_blood.php">Why donate blood</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Become a donor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="need_for_blood.php">Need Blood</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <button type="button" class="btn btn-dark btn-sm"
-                                style="border-radius: 8px; text-align: center;">Login</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<div class="main-content">
+<?php include "content/header.php"; ?>
     <div class="container text-center">
         <div class="row align-items-start" style="margin-top: 1rem;">
             <div class="col" style="margin-top: 4rem;">
@@ -94,11 +61,8 @@
             </div>
         </div>
     </div>
-    <footer style="background-color:black; color: white; padding: 10px 0;">
-        <div class="head text-center">
-          <p>Copyright by Aayushi & Arpan 2024 | Blood Bank System</p>
-        </div>
-      </footer> 
+    <?php include "content/footer.php"; ?>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
