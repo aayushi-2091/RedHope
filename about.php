@@ -1,3 +1,4 @@
+<?php  session_start();  ?>
 <!doctype html>
 <html lang="en">
 
@@ -45,6 +46,13 @@
 <body>
 <?php include "content/header.php" ?>
     <section class="container ">
+    <?php $error_message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+    if($error_message){
+    echo '<script>
+    alert("'.htmlspecialchars($error_message) .'");
+  </script>';}
+    unset($_SESSION['error']); // Clear the error message after using it
+    ?>
         <div class="row">
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="text-center ">
