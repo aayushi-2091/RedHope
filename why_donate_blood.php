@@ -1,3 +1,4 @@
+<?php  session_start();  ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,6 +14,13 @@
 <div class="main-content">
 <?php include "content/header.php"; ?>
     <div class="container text-center">
+    <?php $error_message = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+    if($error_message){
+    echo '<script>
+    alert("'.htmlspecialchars($error_message) .'");
+  </script>';}
+    unset($_SESSION['error']); // Clear the error message after using it
+    ?>
         <div class="row align-items-start" style="margin-top: 1rem;">
             <div class="col" style="margin-top: 4rem;">
                 <h3 style="padding-right: 1rem;">
@@ -63,9 +71,8 @@
     </div>
     <?php include "content/footer.php"; ?>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
